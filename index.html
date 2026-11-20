@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <header>
+    <h1>Explore Rembang</h1>
+    <p>Ayo dolan moro Rembang</p>
+
+    <div class="search-container">
+      <input type="text" id="searchInput"
+        placeholder="Silahkan Ketik Pencarian">
+    <button onclick="cariData()">Cari</button>
+    </div>
+
+  </header>
+
+  <nav>
+    <a href="#kuliner">Kuliner</a>
+    <a href="#penginapan">Penginapan</a>
+    <a href="#wisata">Tempat wisata</a>
+    </nav>
+
+<main>
+  <aside>
+   <h3>
+    <a href="#kuliner">Kuliner</a></h3>
+   <a href="#makanan">Makanan</a>
+   <a href="#minuman">Minuman</a>
+   <a href="#jajanan">Jajanan</a>
+
+   <h3>
+   <a href="#penginapan">Penginapan</a></h3>
+   <a href="#hotel">Hotel</a>
+   <a href="#homestay">Homestay</a>
+   <a href="#kos">Kos</a>
+
+   <h3>
+    <a href="#wisata">Wisata</a></h3>
+   <a href="#alam">Alam</a>
+   <a href="#sejarah">Sejarah</a>
+   <a href="#pantai">Pantai</a>
+
+<!-- FORM KONTAK KAMI -->
+<section id="kontak" class="contact-form">
+
+ <h3>Kontak Kami</h3>
+
+ <div class="contact-form">
+   <form id="contactForm">
+      <div class="form-group">
+       <label for="nama">Nama</label>
+       <input type="text" id="nama" name="nama"
+         placeholder="Masukkan nama Anda" required>
+ </div>
+
+ <div class="form-group">
+   <label for="email">Email</label>
+   <input type="email" id="email" name="email"
+     placeholder="Masukkan email Anda" required>
+</div>
+
+ <div class="form-group">
+    <label for="subjek">Subjek</label>
+    <input type="text" id="subjek" name="subjek"
+      placeholder="Subjek pesan" required>
+ </div>
+
+ <div class="form-group">
+    <label for="pesan">Pesan</label>
+    <textarea id="pesan" name="pesan"
+      placeholder="Tuliskan pesan Anda..."
+      rows="6" required></textarea>
+ </div>
+
+  <button type="submit" class="btn" id="sendButton">Kirim Pesan</button>
+ </form>
+</div>
+</section>
+
+
+  </aside>
+
+<section>
+  <h2>Selamat Datang di Explore Rembang</h2>
+  <p>
+    Temukan berbagai kuliner, penginapan, dan tempat wisata menarik di Rembang.
+  </p>
+
+  <div class="card-container">
+    <div class="card">
+      <img src="kuliner.jpg" alt="kuliner">
+      <h3>Kuliner Rembang</h3>
+      <p>Temukan berbagai kuliner yang enak, segar dan memanjakan lidah di Rembang</p>
+
+      <button class="btn-detail" id="kuliner">Selengkapnya</button>
+    </div>
+  
+    <div class="card">
+      <img src="penginapan.jpg" alt="penginapan">
+      <h3>Penginapan Rembang</h3>
+      <p>Temukan berbagai penginapan yang aman,nyaman dan bersih dirembang.</p>
+
+      <button class="btn-detail" id="penginapan">Pesan Hotel</a></button>
+    </div>
+  
+    <div class="card">
+      <img src="wisata.jpg" alt="tempat wisata">
+    <h3>Tempat Wisata</h3>
+      <p>Temukan berbagai tempat wisata yang indah, dan memanjakan mata di Rembang.</p>
+
+      <button class="btn-detail"><a href="#wisata">Selengkapnya</a></button>
+    </div>
+
+
+<!--KULINER-->
+
+ <section id="kuliner" class="content-menu">
+
+  <h2>Kuliner</h2>
+
+  <p>
+    Rembang menyediakan berbagai olahan makanan, jajanan, dan minuman khas Rembang.
+    Rembang memiliki citarasa yang khas dari budaya masyarakat.
+  </p>
+
+  <div class="card-container">
+
+    <div id="makanan" class="card">
+      <img src="lontong.jpg" alt="kuliner">
+      <h3>Lontong tuyuhan</h3>
+      <p>Lontong Tuyuhan adalah makanan tradisional khas Kabupaten Rembang, Jawa Tengah, yang berasal dari Desa Tuyuhan, Kecamatan Pancur. </p>
+
+        <button class="btn-detail" data_id="kuliner-lontong">Selengkapnya</a></button>
+    </div>
+
+    <div id="jajanan" class="card">
+      <img src="dumbek.jpg" alt="kuliner">
+      <h3>Dumbek</h3>
+      <p>Dumbek adalah jajanan tradisional khas Kabupaten Rembang, Jawa Tengah,
+         yang berbentuk menyerupai terompet atau kerucut spiral dan dibungkus menggunakan daun lontar. </p>
+
+        <button class="btn-detail" data_id="kuliner-dumbek">Selengkapnya</a></button>
+    </div>
+
+    <div id="minuman" class="card">
+      <img src="es degan.jpg" alt="kuliner">
+      <h3>Es degan landoh</h3>
+      <p>Es degan Landoh adalah salah satu kuliner legendaris dan pelopor es kelapa muda (degan) yang sangat terkenal di Kabupaten Rembang, Jawa Tengah.</p>
+
+      <button class="btn-detail" data_id="kuliner-minuman">Selengkapnya</a></button>
+    </div>
+
+  </div>
+ </section>
+  
+
+
+<!--PENGINAPAN-->
+
+  <section id="penginapan" class="content-menu">
+
+    <h2>Penginapan</h2>
+
+  <P>
+    Rembang menyediakan penginapan yang nyaman dan memiliki view pemandangan alam yang indah.
+  </P>
+
+  <div class="card-container">
+
+    <div class="card">
+      <img src="hotel pollos.jpg" alt="penginapan">
+      <h3>Hotel Pollos</h3>
+      <p>Pollos Hotel & Gallery adalah hotel bintang 3 yang terletak di pusat kota Rembang, tepatnya di Jl.
+         Jenderal Sudirman No. 158, Kabongan Lor, Kec. Rembang, Kabupaten Rembang, Jawa Tengah.</p>
+
+      <button class="btn-detail" data_id="penginapan-hotel">Selengkapnya</a></button>
+    </div>
+
+    <div class="card">
+      <img src="baiti homestay.jpg" alt="penginapan">
+      <h3>Baiti Homestay</h3>
+      <p>Baiti Homestay Lasem adalah salah satu penginapan populer dan berkonsep syariah yang terletak di Kota Pusaka Lasem, Kabupaten Rembang, Jawa Tengah.</p>
+
+        <button class="btn-detail" data_id="penginapan-homestay">Selengkapnya</a></button>
+    </div>
+
+    <div class="card">
+      <img src="griya kost.jpg" alt="penginapan">
+      <h3>Griya Kost</h3>
+      <p> Griya Kost (atau yang menggunakan nama Griya di Rembang) yang populer di wilayah Kota Rembang </p>
+
+      <button class="btn-detail" data_id="penginapan-kos">Selengkapnya</a></button>
+    </div>
+
+  </div>
+  </section>
+
+
+<!--WISATA-->
+
+<section id="wisata" class="content-menu">
+
+  <h2>Tempat Wisata</h2>
+
+  <P>
+    Wisata di Rembang sangat menarik perhatian untuk berkunjung kesana karena Bandung memiliki wista yang bersih dan pemandangan yang indah.
+  </P>
+
+  <div class="card-container">
+    <div class="card">
+      <img src="lembah manah.jpg" alt="tempat wisata">
+      <h3>Lembah manah</h3>
+      <p>Lembah Manah adalah destinasi wisata alam tersembunyi di Kabupaten Rembang, Jawa Tengah, yang sering dijuluki sebagai 
+        "Swiss-nya Rembang" karena pemandangannya yang asri dan memesona bak negeri dongeng.</p>
+
+        <button class="btn-detail" data-id="wisata-lembah">Selengkapnya</a></button>
+    </div>
+
+    <div class="card">
+      <img src="pantai wates.jpg" alt="tempat wisata">
+      <h3>Pantai pasir putih wates</h3>
+      <p>Pantai Pasir Putih Wates Rembang - Wikipedia adalah destinasi wisata pantai populer yang berlokasi di Desa Tasikharjo, Kecamatan Kaliori,
+         Kabupaten Rembang, Jawa Tengah, sekitar 5–10 km ke arah barat dari pusat kota Rembang.</p>
+
+        <button class="btn-detail" data-id="wisata-pantai">Selengkapnya</a></button>
+    </div>
+
+    <div class="card">
+      <img src="meseum ra kartini.jpg" alt="tempat wisata">
+      <h3>Museum R.A Kartini</h3>
+      <p>Museum R.A. Kartini Rembang didirikan pada 21 April 1967 atas prakarsa Bupati Rembang saat itu, Drs.
+       Adnan Widodo, untuk mengenang jasa pahlawan emansipasi wanita R.A. Kartini.</p>
+
+      <button class="btn-detail" data-id="wisata-sejarah">Selengkapnya</a></button>
+    </div>
+    
+  </div>
+  
+  <script src="script.js"></script>
+  
+</section>
+</section>
+</main>
+
+<footer>
+  
+  <div class="footer-content">
+    
+    <div class="footer-info">
+      <h3>Explore Rembang</h3>
+      <p>© 2026 Explore Rembang</p>
+      <p>Jelajahi Nikmati Kenali Rembang</p>
+    </div>
+    
+    <div class="footer-media">
+      <p>Ikuti Kami</p>
+    </div>
+    
+    <div class="social-items">
+      <a href="https://tiktok.com">
+      <img src="tiktok.webp" alt="TikTok" target="_blank"></a>
+      <p>TikTok</p>
+    </div>
+    
+    <div class="social-items">
+      <a href="https://youtube.com">
+      <img src="youtube.webp" alt="Yuotube" target="_blank"></a>
+      <p>Facebook</p>
+    </div>
+    
+    <div class="social-items">
+      <a href="https://instagram.com">
+      <img src="instagram.webp" alt="Instagram" target="_blank"></a>
+       <p>Instagram</p>   
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>Explore Rembang</p>
+  </div>
+  
+  </footer>
+
+  <!--MODAL DETAIL DESTINASI-->
+  <div class="modal" id="detailModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal" aria-label="Tutup">&times;</button>
+      <img src="" alt="" id="modalImage">
+      <div class="modal-body">
+        <span class="card-category" id="modalCategory"></span>
+        <h2 id="modalTitle"></h2>
+        <p class="card-location" id="modalLocation"></p>
+        <p id="modalDescription"></p>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
